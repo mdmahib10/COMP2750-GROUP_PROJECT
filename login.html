@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Campus Marketplace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom custom-navbar">
+        <div class="container-fluid px-4">
+            <span class="navbar-brand fw-bold">Campus Marketplace</span>
+            </div>
+    </nav>
+
+    <div class="container d-flex align-items-center justify-content-center min-vh-100" style="margin-top: -60px;">
+        <div class="card login-card p-4 border-0">
+            <div class="card-body">
+                <h2 class="fw-bold mb-1 text-center">Sign In</h2>
+                <p class="text-muted text-center mb-4">Access your account to browse and list items.</p>
+
+                <div id="error-message" class="alert alert-danger d-none" role="alert">
+                    Invalid email or password.
+                </div>
+
+                <form id="login-form">
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-semibold text-secondary">Student Email</label>
+                        <input type="email" class="form-control custom-input" id="email" placeholder="student@students.mq.edu.au" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label fw-semibold text-secondary">Password</label>
+                        <input type="password" class="form-control custom-input" id="password" placeholder="•••••••• " required>
+                    </div>
+                    
+                    <button type="submit" class="btn w-100 btn-brand-green text-white fw-bold py-2">
+                        Sign In
+                    </button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="auth.js"></script>
+    </body>
+</html>

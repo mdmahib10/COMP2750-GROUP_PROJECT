@@ -1,0 +1,88 @@
+
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fc ; 
+}
+
+
+.custom-navbar {
+    height: 60px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    color: #212529;
+}
+
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05)
+}
+
+
+.custom-input {
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    padding: 0.6rem 1rem;
+    background-color: #fcfcfc;
+}
+
+.custom-input:focus {
+    border-color: #1a8754;
+    box-shadow: 0 0 0 0.25rem rgba(26, 135, 84, 0.15); 
+}
+
+.form-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+.btn-brand-green {
+    background-color: #1a8754;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-brand-green:hover {
+    background-color: #146c43; 
+}
+
+
+.marketplace-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.marketplace-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+
+.image-placeholder {
+    height: 200px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-color: #e9ecef;
+    color: #adb5bd ;
+}
+
+.custom-remove-btn {
+    border-radius: 8px;
+    border: 1px solid #dc3545;
+    color: #dc3545;
+    transition: all 0.2s;
+}
+
+.custom-remove-btn:hover {
+    background-color: #dc3545;
+    color: white;
+}
