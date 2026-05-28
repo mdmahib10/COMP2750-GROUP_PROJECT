@@ -42,7 +42,7 @@ if (loginForm) {
             .then((userCredential) => {
                 // Successfully signed in [cite: 18]
                 console.log("Logged in:", userCredential.user.email);
-                window.location.href = 'index.html'; // Redirect to Welcome page [cite: 18]
+                window.location.href = 'marketplace.html'; // Redirect to Welcome page [cite: 18]
             })
             .catch((error) => {
                 // Handle Errors gracefully [cite: 86]
