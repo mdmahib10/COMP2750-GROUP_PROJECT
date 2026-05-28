@@ -59,7 +59,11 @@ onAuthStateChanged(auth, (user) => {
     const currentPage = window.location.pathname.split("/").pop();
 
     if (user) {
-       
+
+        const displayEmail = document.getElementById('user-email-display');
+       if(displayEmail){
+            displayEmail.innerText = user.email;
+       }
         if (currentPage === 'login.html' || currentPage === '') {
             window.location.href = 'index.html';
         }
@@ -83,5 +87,5 @@ window.handleSignOut = function() {
     });
 };
 
-import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
+//import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
 
